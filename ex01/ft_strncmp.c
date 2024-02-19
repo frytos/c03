@@ -40,7 +40,6 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 // 	char	s7[] = "LOL\n";
 // 	char	s8[] = "LOL ";
 // 	char	s9[] = "LOL\t";
-
 // 	printf("ft_strncmp(s1, s2) = %d\n", ft_strncmp(s1, s2, 2));
 // 	printf("ft_strncmp(s1, s2) = %d\n", ft_strncmp(s1, s3, 2));
 // 	printf("ft_strncmp(s4, s5) = %d\n", ft_strncmp(s4, s5, 2));
@@ -55,9 +54,8 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 // 	printf("ft_strncmp(s8, s9) = %d\n", ft_strncmp(s8, s9, 2));
 // 	return (0);
 // }
-
-int main(int argc, char **argv)
-{
-    printf("strncmp:%d\n\n",strncmp(argv[1],argv[2],atoi(argv[3])));
-    printf("ft_strncmp:%d\n\n",ft_strncmp(argv[1],argv[2],atoi(argv[3])));
-}
+// int main(int argc, char **argv)
+// {
+//     printf("strncmp:%d\n\n",strncmp(argv[1],argv[2],atoi(argv[3])));
+//     printf("ft_strncmp:%d\n\n",ft_strncmp(argv[1],argv[2],atoi(argv[3])));
+// }
