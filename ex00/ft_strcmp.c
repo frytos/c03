@@ -38,7 +38,6 @@ int	ft_strcmp(char *s1, char *s2)
 // 	char	s7[] = "LOL\n";
 // 	char	s8[] = "LOL ";
 // 	char	s9[] = "LOL\t";
-
 // 	printf("ft_strcmp(s1, s2) = %d\n", ft_strcmp(s1, s2));
 // 	printf("ft_strcmp(s1, s2) = %d\n", ft_strcmp(s1, s3));
 // 	printf("ft_strcmp(s4, s5) = %d\n", ft_strcmp(s4, s5));
