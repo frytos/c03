@@ -13,12 +13,12 @@
 #include <stdio.h>
 #include <string.h>
 
-char *ft_strcat(char *dest, char *src);
+char	*ft_strcat(char *dest, char *src);
 
-char *ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	index;
-	int len_dest;
+	int	len_dest;
 
 	len_dest = 0;
 	while (dest[len_dest] != 0)
