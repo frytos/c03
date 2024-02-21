@@ -28,6 +28,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	len_src = 0;
 	while (src[len_src] != 0)
 		len_src++;
+	if (size <= len_dest || size == 0)
+		return (size + len_src);
 	index = 0;
 	while (src[index] != 0 && len_dest + index < size - 1)
 	{
@@ -35,10 +37,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 		index++;
 	}
 	dest[len_dest + index] = 0;
-	if (size < len_dest)
-		return (size + len_src);
-	else
-		return (len_dest + len_src);
+	return (len_dest + len_src);
 }
 
 // int main(int argc, char **argv)
