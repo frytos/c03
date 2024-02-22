@@ -17,8 +17,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb);
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	index;
-	int	len_dest;
+	unsigned int	index;
+	unsigned int	len_dest;
 
 	len_dest = 0;
 	while (dest[len_dest] != 0)
@@ -33,7 +33,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest);
 }
 
-// int main(int argc, char **argv)
+// int main(void)
 // {
 //     unsigned int nb = 10;
 //     char s1[128] = "bonjour";

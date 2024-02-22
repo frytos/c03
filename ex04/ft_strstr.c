@@ -21,6 +21,8 @@ char	*ft_strstr(char *str, char *to_find)
 	int	i;
 	int	j;
 
+	if (*to_find == 0)
+		return (str);
 	i = 0;
 	while (str[i] != 0)
 	{
@@ -37,10 +39,10 @@ char	*ft_strstr(char *str, char *to_find)
 	return (NULL);
 }
 
-// int main()
-// {
-//     char to_find[10] = "coucou";
-//     char str[80] = "Hello\ncou arnaud, hihi blablacoucou et tchao";
-//     printf("strstr:   %s\n",strstr(str,to_find));
-//     printf("ft_strstr:%s\n",ft_strstr(str,to_find));
-// }
+int main()
+{
+    char to_find[10] = "coucou";
+    char str[80] = "Hello\ncou arnaud, hihi blablacoucou et tchao";
+    printf("strstr:   %s\n",strstr(str,to_find));
+    printf("ft_strstr:%s\n",ft_strstr(str,to_find));
+}
