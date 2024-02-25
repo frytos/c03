@@ -26,23 +26,21 @@ char	*ft_strstr(char *str, char *to_find)
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] == to_find[0])
-		{
-			j = 0;
-			while (str[i + j] == to_find[j] && to_find[j] != 0)
-				j++;
-			if (to_find[j] == 0)
-				return (&str[i]);
-		}
+		j = 0;
+		while (str[i + j] == to_find[j] && to_find[j] != 0)
+			j++;
+		if (to_find[j] == 0)
+			return (&str[i]);
 		i++;
 	}
 	return (NULL);
 }
 
-int main()
-{
-    char to_find[10] = "coucou";
-    char str[80] = "Hello\ncou arnaud, hihi blablacoucou et tchao";
-    printf("strstr:   %s\n",strstr(str,to_find));
-    printf("ft_strstr:%s\n",ft_strstr(str,to_find));
-}
+// int main()
+// {
+//     char to_find[10] = "coucou";
+//     char str[80] = "Hello\ncou arnaud, hihi blablacoucou et tchao le coucou";
+// 	printf("str       : %s\nto_find   : %s\n", str, to_find);
+//     printf("strstr    : %s\n",strstr(str,to_find));
+//     printf("ft_strstr : %s\n",ft_strstr(str,to_find));
+// }
