@@ -6,7 +6,7 @@
 /*   By: argrouss <argrouss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 15:21:36 by argrouss          #+#    #+#             */
-/*   Updated: 2024/02/19 15:21:41 by argrouss         ###   ########.fr       */
+/*   Updated: 2024/02/26 15:58:35 by argrouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 
+	if (n == 0)
+		return (0);
 	i = 0;
 	while ((i < n - 1 && s1[i] == s2[i]) && (s1[i] != 0 || s2[i] != 0))
 		i++;
